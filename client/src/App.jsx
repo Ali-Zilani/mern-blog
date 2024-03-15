@@ -1,10 +1,19 @@
-
+import {BrowserRouter,Routes,Route, Navigate} from 'react-router-dom'
+import {Home,About,SignIn,SignUp,Dashboard,Projects} from './pages/index'
 
 function App() {
   return (
-    <>
-      <h1 className='font-bold text-3xl text-green-600 bg-red-200 text-center'>This is Mern Blog APP </h1>
-       </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
