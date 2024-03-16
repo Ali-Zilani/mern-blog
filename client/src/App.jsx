@@ -1,9 +1,11 @@
 import {BrowserRouter,Routes,Route, Navigate} from 'react-router-dom'
 import {Home,About,SignIn,SignUp,Dashboard,Projects} from './pages/index'
+import Header from './components/Header'
 
 function App() {
   return (
     <BrowserRouter>
+    <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
