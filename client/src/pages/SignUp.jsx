@@ -1,6 +1,6 @@
 import {Link, useNavigate } from 'react-router-dom'
 import { useState } from 'react';
-import { Navbar ,TextInput ,Button, Label, Alert, Spinner } from 'flowbite-react'
+import { TextInput ,Button, Label, Alert, Spinner } from 'flowbite-react'
 
 export default function SignUp(){
   const [formData , setFormData] = useState({});
