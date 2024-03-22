@@ -32,6 +32,7 @@ export default function OAuth() {
             }
         } catch (error) {
             console.log(error);
+            throw(error)
         }
     } 
   return (
