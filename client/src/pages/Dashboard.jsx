@@ -20,7 +20,8 @@ function Dashboard() {
         <DashSidebar/>
       </div>
       {/* profile */}
-      {tab === 'profile' && <DashProfile/>}
+      <DashProfile/>
+      {/* {tab === 'profile' && <DashProfile/>} */}
       
     </div>
   )
